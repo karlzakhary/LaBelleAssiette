@@ -1,28 +1,15 @@
-### Subject
+InventoryManagement Web Application
 
-Chef Amit is confronted to a big problem: due to his incredible number of bookings, maintaining a count of everything he has in his huge kitchen became a pain.
-He would like a web application to help him manage an inventory of all the ingredients he posseses.
+The application is structured around the MEAN stack (MongoDB, Express, Angular.js, Node.js).
 
-Build a small application to help chef Amit manage his stock.
-He wants to be able to:
-- add ingredients to his inventory
-- deal with quantities
-- change the name of his ingredients in case he mispelled it
-- remove the ingredients he has already used for cooking
+The following items should be installed before running the InventoryApplication:
 
-He likes his applications to be intuitive :)
+MongoDB, Node.js, Express, Angular.js, and configure the Database
 
-### Constraints
 
-You need to follow the `package.json` directives and make you own `app.js` file.
+Running the Application
 
-The data composition and the file(s) format are totally up to you.
-
-You can use whatever you want for the GUI (but it must be javascript-based and in the browser).
-
-You will find a <a href="https://github.com/LaBelleAssiette/jobs/blob/master/part1/ingredients.json">list of ingredients</a> to help you in the same folder
-
-### Bonus
-
-By reading the ingredients list you will notice that some ingredients are linked to a boolean instead of a quantity, try to make it relevant in your application!
+From the command line, run the server.js file in the main directory using node.
+    node server.js
+In a browser, traverse to the server http://localhost:port .
 
