@@ -12,7 +12,8 @@ module.exports = function(router) {
         res.json(ingredients);
       });
     })
-    .post(function(req, res) {
+   // Add new 
+   .post(function(req, res) {
       var ingredient = new Ingredient();
       ingredient.name = req.body.name;
       ingredient.quantity = req.body.quantity;
@@ -24,14 +25,16 @@ module.exports = function(router) {
   });
 
   router.route("/ingredient/:id")
-    .get(function(req, res){
+   // Retrieve 
+   .get(function(req, res){
       Ingredient.findById(req.params.id, function(err, ingredient){
         if (err)
           res.send(err);
         res.json(ingredient);
       });
     })
-    .put(function(req, res) {
+   // Update Current info 
+   .put(function(req, res) {
       Ingredient.findById(req.params.id, function(err, ingredient) {
         if (err)
           res.send(err);
