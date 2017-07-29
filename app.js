@@ -10,9 +10,9 @@ mongoose = require('mongoose');
 app.path = path = require('path');
 
 
-mongoose.connect('mongodb://localhost/news', function(err,db){
+mongoose.connect('mongodb://localhost/LaBelle', function(err,db){
     if (!err){
-        console.log('Connected to /news!');
+        console.log('Connected to /LaBelle!');
     } else{
         console.dir(err); //failed to connect
     }
