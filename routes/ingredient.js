@@ -1,10 +1,7 @@
 var Ingredient = require('../models/ingredient');
 
 module.exports = function(router) {
-  /*  "/ingredient"
-   *    GET: finds all the ingredients
-   *    POST: creates a new ingredient
-   */
+  
   router.route('/ingredient')
     .get(function(req, res){
       Ingredient.find(function(err, ingredients){
@@ -24,11 +21,7 @@ module.exports = function(router) {
       });
   });
 
-  /*  "/ingredient/:id"
-   *    GET: find ingredient
-   *    PUT: update ingredient
-   *    DELETE: delete ingredient
-   */
+ 
   router.route("/ingredient/:id")
     .get(function(req, res){
       Ingredient.findById(req.params.id, function(err, ingredient){
