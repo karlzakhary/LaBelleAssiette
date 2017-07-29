@@ -5,10 +5,10 @@ bodyParser = require('body-parser'),
 methodOverride = require('method-override'),
 util = require('util'),
 mongoose = require('mongoose');
-//config = require('./config');
+
 
 app.path = path = require('path');
-app.jsHandler = jsHandler = '';
+
 
 mongoose.connect('mongodb://localhost/news', function(err,db){
     if (!err){
